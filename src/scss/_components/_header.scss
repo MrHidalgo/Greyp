@@ -1,5 +1,129 @@
 // HEADER :: START
 
-.header {}
+.header {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+
+    &-left {
+      width: 100%;
+      max-width: 139px;
+    }
+
+    &-middle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      min-width: 1px;
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 185px;
+      padding-right: 10px;
+
+      div {
+        &:nth-of-type(1) {}
+        &:nth-of-type(2) {
+          width: 31px;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__basket {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    width: 31px;
+    height: 30px;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 13px;
+      min-height: 13px;
+      padding: 1px 2px;
+      border-radius: 100%;
+      background-color: #FFE400;
+
+      i {
+        position: relative;
+        left: -1px;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 10px;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 1;
+      }
+    }
+
+    .icon-font {
+      color: #000000;
+      font-size: 21px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+
+    &-link {
+      display: flex;
+      text-transform: uppercase;
+      white-space: nowrap;
+      font-weight: 300;
+      font-size: 14px;
+      color: #000000;
+      letter-spacing: 0;
+      @include transition(color);
+
+      &:hover {
+        color: rgba(#000000, 0.9);
+        @include transition(color);
+      }
+
+      &.is-active {
+        font-weight: 900;
+      }
+    }
+  }
+}
 
 // HEADER :: END

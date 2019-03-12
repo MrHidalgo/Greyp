@@ -1,7 +1,34 @@
 // HEADER :: START
 
+mixin headerNav(arr)
+  .header__nav
+    ul
+      each val, idx in arr
+        li
+          a.header__nav-link(href="#"
+            class= (idx === 0) ? 'is-active':''
+          title="")!= val
+
 header#header.header
-  .c-grid
+  .c-grid-fluid
     .header__wrapper
+      .header__wrapper-left
+        a.header__logo(href="/" class="" title="")
+          +iconSVG('logo-header')
+
+      .header__wrapper-middle
+
+        +headerNav(['SMART BIKES', 'FAST BIKES', 'COMPANY', 'EVENTS'])
+
+      .header__wrapper-right
+        div
+          a.header__nav-link(href="#" class= "" title="")!= 'contact us'
+
+        div
+          a.header__basket(href="#" class="" title="")
+            span
+              i!= "1"
+            i.icon-font.icon-basket
+
 
 // HEADER :: END
