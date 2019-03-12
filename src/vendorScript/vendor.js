@@ -7,5 +7,6 @@
 * - jquery;
 * - popper.js;
 * - bootstrap;
+* - swiper;
 *
 * */

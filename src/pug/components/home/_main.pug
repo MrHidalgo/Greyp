@@ -1,0 +1,32 @@
+// SECTION main :: START
+
+section#main.main
+  .main__wrapper
+
+    .main__slider
+
+      mixin swiperContent()
+        .swiper-slide(style="background-image:url('./img/img-main-slide@2x.jpg');")
+        .swiper-slide(style="background-image:url('./img/img-main-slide@2x.jpg');")
+        .swiper-slide(style="background-image:url('./img/img-main-slide@2x.jpg');")
+        .swiper-slide(style="background-image:url('./img/img-main-slide@2x.jpg');")
+
+      +swiper('swiper-container-main', 'swiperContent', false, false, false)
+
+      a.main__slider-btn.main__slider-btn--prev(href="#" class="" title="")
+        +iconSVG('prev')
+      a.main__slider-btn.main__slider-btn--next(href="#" class="" title="")
+        +iconSVG('next')
+
+      .main__slider-content
+        .c-grid
+          h1.main__title!= "BADASS OUTSIDE"
+          h2.main__subtitle!= "_SMARTASS INSIDE"
+
+          a.main__go(href="#" class="" title="")
+            +iconSVG('go')
+            span!= "go"
+
+    p.main__desc!= "44.498123, 14.995418 Croatia, Brač, Altitude 550m aSI, Heartrate 75bpm, total distance till this point 450km"
+
+// SECTION main :: END

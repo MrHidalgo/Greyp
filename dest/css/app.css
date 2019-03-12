@@ -1,15 +1,33 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 /* line 1, src/scss/_generated/_spriteSVG.scss */
+.icon-go {
+  width: 96px;
+  height: 114px;
+}
+
+/* line 5, src/scss/_generated/_spriteSVG.scss */
 .icon-logo {
   width: 65px;
   height: 46px;
 }
 
-/* line 5, src/scss/_generated/_spriteSVG.scss */
+/* line 9, src/scss/_generated/_spriteSVG.scss */
 .icon-logo-header {
   width: 212px;
   height: 46px;
+}
+
+/* line 13, src/scss/_generated/_spriteSVG.scss */
+.icon-next {
+  width: 21px;
+  height: 51px;
+}
+
+/* line 17, src/scss/_generated/_spriteSVG.scss */
+.icon-prev {
+  width: 21px;
+  height: 51px;
 }
 
 @font-face {
@@ -495,6 +513,33 @@ picture {
   font-size: 10px;
 }
 
+/* line 1, src/scss/_shared/_swiper.scss */
+.swiper-container {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+}
+
+/* line 6, src/scss/_shared/_swiper.scss */
+.swiper-container-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  min-height: 627px;
+}
+
+/* line 15, src/scss/_shared/_swiper.scss */
+.swiper-container-main .swiper-slide {
+  position: relative;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
 /* line 3, src/scss/_shared/_iconSVG.scss */
 .icon-svg {
   display: inline-block;
@@ -513,7 +558,7 @@ picture {
 /* line 3, src/scss/_components/_header.scss */
 .header {
   z-index: 100;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1017,6 +1062,122 @@ picture {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+}
+
+/* line 3, src/scss/_components/home/_main.scss */
+.main {
+  padding-bottom: 66px;
+}
+
+/* line 6, src/scss/_components/home/_main.scss */
+.main__slider {
+  position: relative;
+  height: 627px;
+}
+
+/* line 10, src/scss/_components/home/_main.scss */
+.main__slider-btn {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 21px;
+}
+
+/* line 17, src/scss/_components/home/_main.scss */
+.main__slider-btn--prev {
+  left: 79px;
+}
+
+/* line 21, src/scss/_components/home/_main.scss */
+.main__slider-btn--next {
+  right: 79px;
+}
+
+/* line 26, src/scss/_components/home/_main.scss */
+.main__slider-content {
+  z-index: 15;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+/* line 35, src/scss/_components/home/_main.scss */
+.main__desc {
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* line 44, src/scss/_components/home/_main.scss */
+.main__title {
+  padding-bottom: 5px;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 48px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+/* line 53, src/scss/_components/home/_main.scss */
+.main__subtitle {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 36px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+/* line 61, src/scss/_components/home/_main.scss */
+.main__go {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 95px;
+  height: 113px;
+}
+
+/* line 71, src/scss/_components/home/_main.scss */
+.main__go svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 79, src/scss/_components/home/_main.scss */
+.main__go span {
+  position: relative;
+  left: 22px;
+  font-weight: 900;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

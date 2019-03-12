@@ -45,6 +45,29 @@ var initSvg4everybody = function initSvg4everybody() {
 };
 
 /**
+ * @name initSwiper
+ *
+ * @description initialize Swiper
+ */
+var initSwiper = function initSwiper() {
+
+  var mySwiper = new Swiper('.swiper-container-main', {
+    loop: true,
+    watchOverflow: true,
+    normalizeSlideIndex: true,
+    grabCursor: true,
+    freeMode: false,
+    effect: 'slide',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '.main__slider-btn--next',
+      prevEl: '.main__slider-btn--prev'
+    }
+  });
+};
+
+/**
  * @name initWebFontLoader
  *
  * @description Loading fonts regardless of the source, then adds a standard set of events you may use to control the loading experience... for more details => https://github.com/typekit/fvd
@@ -71,6 +94,21 @@ var initWebFontLoader = function initWebFontLoader() {
   //   }
   // };
 };
+
+/**
+ * @description Window on load.
+ */
+$(window).on("load", function (ev) {});
+
+/**
+ * @description Window on resize.
+ */
+$(window).on("resize", function (ev) {});
+
+/**
+ * @description Window on scroll.
+ */
+$(window).on("scroll", function (ev) {});
 
 /**
  * @description Document DOM ready.
@@ -105,6 +143,7 @@ $(document).ready(function (ev) {
 
     // lib
     // ==========================================
+    initSwiper();
 
     // callback
     // ==========================================
