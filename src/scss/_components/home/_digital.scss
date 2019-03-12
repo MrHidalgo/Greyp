@@ -17,10 +17,12 @@
     font-weight: 900;
     font-size: 84px;
     color: #000000;
-    letter-spacing: 0;
+    letter-spacing: -0.3px;
   }
 
   &__desc {
+    position: relative;
+    top: -2px;
     padding-left: 10px;
     font-weight: 300;
     font-size: 14px;

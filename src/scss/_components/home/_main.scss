@@ -1,16 +1,16 @@
 // SECTION main :: START
 
 .main {
-  padding-bottom: 66px;
+  padding-bottom: 56px;
 
   &__slider {
     position: relative;
-    height: 627px;
+    height: 628px;
 
     &-btn {
       z-index: 20;
       position: absolute;
-      top: 50%;
+      top: calc(50% + -22px);
       transform: translateY(-50%);
       width: 21px;
 
@@ -40,10 +40,12 @@
       display: flex;
       align-items: center;
       height: 100%;
+      padding-top: 17px;
     }
   }
 
   &__desc {
+    padding-top: 9px;
     font-weight: 300;
     font-size: 14px;
     color: #000000;
@@ -53,12 +55,13 @@
   }
 
   &__title {
-    padding-bottom: 5px;
+    padding-bottom: 4px;
     font-weight: 900;
     font-style: italic;
     font-size: 48px;
     color: #FFFFFF;
-    letter-spacing: 0;
+    letter-spacing: -0.7px;
+    line-height: 1;
   }
 
   &__subtitle {
@@ -66,15 +69,15 @@
     font-style: italic;
     font-size: 36px;
     color: #FFFFFF;
-    letter-spacing: 0;
+    letter-spacing: -0.4px;
   }
 
   &__go {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 50%;
-    left: 50%;
+    top: calc(50% - 2px);
+    left: calc(50% + 15px);
     transform: translate(-50%, -50%);
     width: 95px;
     height: 113px;
@@ -98,6 +101,7 @@
 
     span {
       position: relative;
+      top: 2px;
       left: 22px;
       font-weight: 900;
       font-size: 18px;

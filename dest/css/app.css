@@ -313,12 +313,12 @@ picture {
 
 /* line 4, src/scss/_shared/_common.scss */
 .subscribe {
-  padding-top: 65px;
+  padding-top: 64px;
 }
 
 /* line 7, src/scss/_shared/_common.scss */
 .subscribe__title {
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   font-weight: 300;
   font-size: 16px;
   color: #000000;
@@ -623,16 +623,21 @@ picture {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  max-width: 185px;
+  max-width: 170px;
   padding-right: 10px;
 }
 
-/* line 42, src/scss/_components/_header.scss */
+/* line 41, src/scss/_components/_header.scss */
+.header__wrapper-right div:nth-of-type(1) {
+  padding-top: 4px;
+}
+
+/* line 45, src/scss/_components/_header.scss */
 .header__wrapper-right div:nth-of-type(2) {
   width: 31px;
 }
 
-/* line 49, src/scss/_components/_header.scss */
+/* line 52, src/scss/_components/_header.scss */
 .header__logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -640,7 +645,7 @@ picture {
   display: flex;
 }
 
-/* line 53, src/scss/_components/_header.scss */
+/* line 56, src/scss/_components/_header.scss */
 .header__basket {
   display: -webkit-box;
   display: -webkit-flex;
@@ -655,11 +660,12 @@ picture {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
+  top: -4px;
   width: 31px;
   height: 30px;
 }
 
-/* line 61, src/scss/_components/_header.scss */
+/* line 65, src/scss/_components/_header.scss */
 .header__basket span {
   position: absolute;
   top: 0;
@@ -684,7 +690,7 @@ picture {
   background-color: #FFE400;
 }
 
-/* line 74, src/scss/_components/_header.scss */
+/* line 78, src/scss/_components/_header.scss */
 .header__basket span i {
   position: relative;
   left: -1px;
@@ -696,21 +702,24 @@ picture {
   line-height: 1;
 }
 
-/* line 86, src/scss/_components/_header.scss */
+/* line 90, src/scss/_components/_header.scss */
 .header__basket .icon-font {
   color: #000000;
   font-size: 21px;
 }
 
-/* line 92, src/scss/_components/_header.scss */
+/* line 96, src/scss/_components/_header.scss */
 .header__nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  left: 15px;
+  top: 2px;
 }
 
-/* line 95, src/scss/_components/_header.scss */
+/* line 102, src/scss/_components/_header.scss */
 .header__nav ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -722,7 +731,7 @@ picture {
           align-items: center;
 }
 
-/* line 99, src/scss/_components/_header.scss */
+/* line 106, src/scss/_components/_header.scss */
 .header__nav ul li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -736,7 +745,7 @@ picture {
   padding-right: 25px;
 }
 
-/* line 107, src/scss/_components/_header.scss */
+/* line 114, src/scss/_components/_header.scss */
 .header__nav-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -753,7 +762,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 117, src/scss/_components/_header.scss */
+/* line 124, src/scss/_components/_header.scss */
 .header__nav-link:hover {
   color: rgba(0, 0, 0, 0.9);
   -webkit-transition: color 0.3s ease-in-out;
@@ -761,7 +770,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 122, src/scss/_components/_header.scss */
+/* line 129, src/scss/_components/_header.scss */
 .header__nav-link.is-active {
   font-weight: 900;
 }
@@ -803,7 +812,7 @@ picture {
 
 /* line 27, src/scss/_components/_fast.scss */
 .fast__title h2 {
-  padding-right: 13px;
+  padding-right: 11px;
   font-weight: 300;
   font-style: italic;
   font-size: 24px;
@@ -817,13 +826,13 @@ picture {
   font-style: italic;
   font-size: 18px;
   color: #000000;
-  letter-spacing: 0;
+  letter-spacing: -0.1px;
 }
 
 /* line 45, src/scss/_components/_fast.scss */
 .fast__block {
   position: relative;
-  height: 130px;
+  height: 90px;
 }
 
 /* line 51, src/scss/_components/_fast.scss */
@@ -873,35 +882,38 @@ picture {
 
 /* line 80, src/scss/_components/_fast.scss */
 .fast__block-text {
-  padding-top: 10px;
+  position: relative;
+  top: 3px;
   padding-left: 43px;
   color: #fff;
 }
 
-/* line 85, src/scss/_components/_fast.scss */
+/* line 86, src/scss/_components/_fast.scss */
 .fast__block-text span {
   position: relative;
   text-transform: uppercase;
+  line-height: 1;
 }
 
-/* line 89, src/scss/_components/_fast.scss */
+/* line 91, src/scss/_components/_fast.scss */
 .fast__block-text span:first-of-type {
   font-weight: 300;
   font-style: italic;
   font-size: 36px;
-  letter-spacing: 0;
+  letter-spacing: -0.4px;
 }
 
-/* line 96, src/scss/_components/_fast.scss */
+/* line 98, src/scss/_components/_fast.scss */
 .fast__block-text span:last-of-type {
-  top: 14px;
+  top: 26px;
+  left: 7px;
   font-weight: 900;
   font-style: italic;
   font-size: 48px;
   letter-spacing: 0;
 }
 
-/* line 106, src/scss/_components/_fast.scss */
+/* line 109, src/scss/_components/_fast.scss */
 .fast__block-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -932,7 +944,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 124, src/scss/_components/_fast.scss */
+/* line 127, src/scss/_components/_fast.scss */
 .fast__block-btn:hover {
   color: #000000;
   background-color: #fff180;
@@ -941,7 +953,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 130, src/scss/_components/_fast.scss */
+/* line 133, src/scss/_components/_fast.scss */
 .fast__block-btn:active {
   color: #000000;
   background-color: #ccb600;
@@ -1010,13 +1022,13 @@ picture {
 /* line 34, src/scss/_components/_footer.scss */
 .footer__col-3, .footer__col-4, .footer__col-5, .footer__col-6 {
   max-width: 95px;
-  padding-top: 79px;
+  padding-top: 77px;
 }
 
 /* line 41, src/scss/_components/_footer.scss */
 .footer__col-7 {
   max-width: 160px;
-  padding-top: 79px;
+  padding-top: 77px;
 }
 
 /* line 45, src/scss/_components/_footer.scss */
@@ -1031,7 +1043,7 @@ picture {
 
 /* line 55, src/scss/_components/_footer.scss */
 .footer__title {
-  padding-bottom: 13px;
+  padding-bottom: 10px;
   font-weight: 900;
   font-style: italic;
   color: #000000;
@@ -1054,7 +1066,7 @@ picture {
 
 /* line 69, src/scss/_components/_footer.scss */
 .footer__nav ul li {
-  padding-bottom: 6px;
+  padding-bottom: 3px;
 }
 
 /* line 72, src/scss/_components/_footer.scss */
@@ -1170,20 +1182,21 @@ picture {
 
 /* line 3, src/scss/_components/home/_main.scss */
 .main {
-  padding-bottom: 66px;
+  padding-bottom: 56px;
 }
 
 /* line 6, src/scss/_components/home/_main.scss */
 .main__slider {
   position: relative;
-  height: 627px;
+  height: 628px;
 }
 
 /* line 10, src/scss/_components/home/_main.scss */
 .main__slider-btn {
   z-index: 20;
   position: absolute;
-  top: 50%;
+  top: -webkit-calc(50% + -22px);
+  top: calc(50% + -22px);
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1234,10 +1247,12 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  padding-top: 17px;
 }
 
-/* line 46, src/scss/_components/home/_main.scss */
+/* line 47, src/scss/_components/home/_main.scss */
 .main__desc {
+  padding-top: 9px;
   font-weight: 300;
   font-size: 14px;
   color: #000000;
@@ -1246,26 +1261,27 @@ picture {
   text-align: center;
 }
 
-/* line 55, src/scss/_components/home/_main.scss */
+/* line 57, src/scss/_components/home/_main.scss */
 .main__title {
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   font-weight: 900;
   font-style: italic;
   font-size: 48px;
   color: #FFFFFF;
-  letter-spacing: 0;
+  letter-spacing: -0.7px;
+  line-height: 1;
 }
 
-/* line 64, src/scss/_components/home/_main.scss */
+/* line 67, src/scss/_components/home/_main.scss */
 .main__subtitle {
   font-weight: 300;
   font-style: italic;
   font-size: 36px;
   color: #FFFFFF;
-  letter-spacing: 0;
+  letter-spacing: -0.4px;
 }
 
-/* line 72, src/scss/_components/home/_main.scss */
+/* line 75, src/scss/_components/home/_main.scss */
 .main__go {
   position: absolute;
   display: -webkit-box;
@@ -1276,8 +1292,10 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 50%;
-  left: 50%;
+  top: -webkit-calc(50% - 2px);
+  top: calc(50% - 2px);
+  left: -webkit-calc(50% + 15px);
+  left: calc(50% + 15px);
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1285,7 +1303,7 @@ picture {
   height: 113px;
 }
 
-/* line 83, src/scss/_components/home/_main.scss */
+/* line 86, src/scss/_components/home/_main.scss */
 .main__go:hover svg {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
@@ -1297,7 +1315,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 89, src/scss/_components/home/_main.scss */
+/* line 92, src/scss/_components/home/_main.scss */
 .main__go svg {
   position: absolute;
   top: 0;
@@ -1314,9 +1332,10 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 99, src/scss/_components/home/_main.scss */
+/* line 102, src/scss/_components/home/_main.scss */
 .main__go span {
   position: relative;
+  top: 2px;
   left: 22px;
   font-weight: 900;
   font-size: 18px;
@@ -1352,11 +1371,13 @@ picture {
   font-weight: 900;
   font-size: 84px;
   color: #000000;
-  letter-spacing: 0;
+  letter-spacing: -0.3px;
 }
 
 /* line 23, src/scss/_components/home/_digital.scss */
 .digital__desc {
+  position: relative;
+  top: -2px;
   padding-left: 10px;
   font-weight: 300;
   font-size: 14px;
@@ -1365,12 +1386,15 @@ picture {
   line-height: 20px;
 }
 
-/* line 5, src/scss/_components/home/_advantage.scss */
+/* line 4, src/scss/_components/home/_advantage.scss */
 .advantage .c-grid {
-  max-width: 90%;
+  max-width: -webkit-calc(100% - 80px);
+  max-width: calc(100% - 80px);
+  padding-left: 0;
+  padding-right: 0;
 }
 
-/* line 9, src/scss/_components/home/_advantage.scss */
+/* line 10, src/scss/_components/home/_advantage.scss */
 .advantage__block {
   cursor: pointer;
   position: relative;
@@ -1383,7 +1407,7 @@ picture {
   transition: max-width 0.65s ease-in-out;
 }
 
-/* line 17, src/scss/_components/home/_advantage.scss */
+/* line 18, src/scss/_components/home/_advantage.scss */
 .advantage__block.is-hover {
   max-width: -webkit-calc(50%);
   max-width: calc(50%);
@@ -1392,7 +1416,7 @@ picture {
   transition: max-width 0.5s ease-in-out;
 }
 
-/* line 21, src/scss/_components/home/_advantage.scss */
+/* line 22, src/scss/_components/home/_advantage.scss */
 .advantage__block.is-nhover {
   max-width: -webkit-calc(50% / 2);
   max-width: calc(50% / 2);
@@ -1401,7 +1425,7 @@ picture {
   transition: max-width 0.5s ease-in-out;
 }
 
-/* line 27, src/scss/_components/home/_advantage.scss */
+/* line 28, src/scss/_components/home/_advantage.scss */
 .advantage__block:hover .advantage__block-title {
   -webkit-transform: translateY(-11px);
       -ms-transform: translateY(-11px);
@@ -1413,7 +1437,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 31, src/scss/_components/home/_advantage.scss */
+/* line 32, src/scss/_components/home/_advantage.scss */
 .advantage__block:hover .advantage__block-desc {
   opacity: 1;
   -webkit-transition-delay: 1s;
@@ -1424,17 +1448,17 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 38, src/scss/_components/home/_advantage.scss */
+/* line 39, src/scss/_components/home/_advantage.scss */
 .advantage__block-wrapper {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 502px;
+  min-height: 489px;
 }
 
-/* line 44, src/scss/_components/home/_advantage.scss */
+/* line 45, src/scss/_components/home/_advantage.scss */
 .advantage__block-title {
   z-index: 10;
   position: absolute;
@@ -1446,15 +1470,12 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   top: 0;
   left: 24px;
   width: 100%;
   max-width: 160px;
   height: 50px;
+  padding-left: 22px;
   background-color: #ffe400;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
@@ -1463,7 +1484,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 58, src/scss/_components/home/_advantage.scss */
+/* line 59, src/scss/_components/home/_advantage.scss */
 .advantage__block-title p {
   font-weight: 300;
   font-style: italic;
@@ -1472,7 +1493,7 @@ picture {
   letter-spacing: 0;
 }
 
-/* line 67, src/scss/_components/home/_advantage.scss */
+/* line 68, src/scss/_components/home/_advantage.scss */
 .advantage__block-img {
   overflow: hidden;
   z-index: -1;
@@ -1482,7 +1503,7 @@ picture {
   height: calc(100% - 24px);
 }
 
-/* line 74, src/scss/_components/home/_advantage.scss */
+/* line 75, src/scss/_components/home/_advantage.scss */
 .advantage__block-img img {
   position: absolute;
   top: 0;
@@ -1495,7 +1516,7 @@ picture {
      object-position: left center;
 }
 
-/* line 85, src/scss/_components/home/_advantage.scss */
+/* line 86, src/scss/_components/home/_advantage.scss */
 .advantage__block-desc {
   opacity: 0;
   z-index: 5;
@@ -1515,7 +1536,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 98, src/scss/_components/home/_advantage.scss */
+/* line 99, src/scss/_components/home/_advantage.scss */
 .advantage__block-desc p {
   font-weight: 300;
   font-size: 24px;
@@ -1524,14 +1545,14 @@ picture {
   line-height: 38px;
 }
 
-/* line 105, src/scss/_components/home/_advantage.scss */
+/* line 106, src/scss/_components/home/_advantage.scss */
 .advantage__block-desc p span {
   font-weight: bold;
 }
 
 /* line 3, src/scss/_components/home/_channels.scss */
 .channels {
-  padding-top: 100px;
+  padding-top: 101px;
   padding-bottom: 100px;
 }
 
@@ -1629,9 +1650,14 @@ picture {
   font-size: 25px;
 }
 
+/* line 3, src/scss/_components/home/_description.scss */
+.description {
+  min-height: 650px;
+}
+
 /* line 3, src/scss/_components/home/_bike.scss */
 .bike {
-  padding-top: 5px;
+  padding-top: 7px;
   padding-bottom: 126px;
 }
 
@@ -1662,7 +1688,7 @@ picture {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 586px;
-  padding: 44px 105px;
+  padding: 39px 105px 44px;
   background-color: #000000;
 }
 
@@ -1682,7 +1708,7 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 33px;
+  padding-bottom: 38px;
 }
 
 /* line 31, src/scss/_components/home/_bike.scss */
@@ -1879,24 +1905,26 @@ picture {
 
 /* line 158, src/scss/_components/home/_bike.scss */
 .bike__title {
-  padding-bottom: 5px;
+  padding-bottom: 9px;
   font-weight: 900;
   font-style: italic;
   font-size: 48px;
   color: #FFFFFF;
-  letter-spacing: 0;
+  letter-spacing: -1px;
+  line-height: 1;
 }
 
-/* line 167, src/scss/_components/home/_bike.scss */
+/* line 168, src/scss/_components/home/_bike.scss */
 .bike__desc {
   font-weight: 300;
   font-style: italic;
   font-size: 24px;
   color: #FFFFFF;
-  letter-spacing: 0;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
 }
 
-/* line 175, src/scss/_components/home/_bike.scss */
+/* line 177, src/scss/_components/home/_bike.scss */
 .bike__block {
   cursor: pointer;
   position: relative;
@@ -1911,10 +1939,10 @@ picture {
           flex-direction: column;
   width: 100%;
   max-width: 382px;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
-/* line 184, src/scss/_components/home/_bike.scss */
+/* line 186, src/scss/_components/home/_bike.scss */
 .bike__block:before, .bike__block:after {
   content: '';
   position: absolute;
@@ -1927,17 +1955,17 @@ picture {
   transition: height 0.3s ease-in-out;
 }
 
-/* line 195, src/scss/_components/home/_bike.scss */
+/* line 197, src/scss/_components/home/_bike.scss */
 .bike__block:before {
   left: 0;
 }
 
-/* line 199, src/scss/_components/home/_bike.scss */
+/* line 201, src/scss/_components/home/_bike.scss */
 .bike__block:after {
   right: 0;
 }
 
-/* line 204, src/scss/_components/home/_bike.scss */
+/* line 206, src/scss/_components/home/_bike.scss */
 .bike__block.is-active:before, .bike__block.is-active:after {
   height: 100%;
   -webkit-transition: height 0.3s ease-in-out;
@@ -1945,7 +1973,7 @@ picture {
   transition: height 0.3s ease-in-out;
 }
 
-/* line 210, src/scss/_components/home/_bike.scss */
+/* line 212, src/scss/_components/home/_bike.scss */
 .bike__block.is-active .bike__block-badge {
   color: #000000;
   background-color: #ffffff;
@@ -1954,7 +1982,7 @@ picture {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 215, src/scss/_components/home/_bike.scss */
+/* line 217, src/scss/_components/home/_bike.scss */
 .bike__block.is-active .bike__block-badge:before {
   top: 0;
   height: 40px;
@@ -1964,7 +1992,7 @@ picture {
   transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-/* line 224, src/scss/_components/home/_bike.scss */
+/* line 226, src/scss/_components/home/_bike.scss */
 .bike__block.is-active .bike__block-image img {
   -webkit-transform: scale(1.7);
       -ms-transform: scale(1.7);
@@ -1976,7 +2004,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 230, src/scss/_components/home/_bike.scss */
+/* line 232, src/scss/_components/home/_bike.scss */
 .bike__block.is-active .bike__block-specs,
 .bike__block.is-active .bike__block-price {
   -webkit-transform: translateY(50px);
@@ -1989,7 +2017,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 237, src/scss/_components/home/_bike.scss */
+/* line 239, src/scss/_components/home/_bike.scss */
 .bike__block-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2007,8 +2035,6 @@ picture {
   max-width: 1340px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* line 249, src/scss/_components/home/_bike.scss */
@@ -2067,7 +2093,7 @@ picture {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 291px;
+  height: 287px;
 }
 
 /* line 285, src/scss/_components/home/_bike.scss */
@@ -2103,7 +2129,7 @@ picture {
   height: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out;

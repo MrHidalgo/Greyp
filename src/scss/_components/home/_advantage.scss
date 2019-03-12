@@ -1,9 +1,10 @@
 // SECTION advantage :: START
 
 .advantage {
-
   .c-grid {
-    max-width: 90%;
+    max-width: calc(100% - 80px);
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &__block {
@@ -38,7 +39,7 @@
     &-wrapper {
       position: relative;
       display: flex;
-      min-height: 502px;
+      min-height: 489px;
     }
 
     &-title {
@@ -46,12 +47,12 @@
       position: absolute;
       display: flex;
       align-items: center;
-      justify-content: center;
       top: 0;
       left: 24px;
       width: 100%;
       max-width: 160px;
       height: 50px;
+      padding-left: 22px;
       background-color: #ffe400;
       @include transition(transform);
 

@@ -36,11 +36,11 @@
     &-5,
     &-6 {
       max-width: 95px;
-      padding-top: 79px;
+      padding-top: 77px;
     }
     &-7 {
       max-width: 160px;
-      padding-top: 79px;
+      padding-top: 77px;
 
       .footer__title {
         text-transform: lowercase;
@@ -53,7 +53,7 @@
   }
 
   &__title {
-    padding-bottom: 13px;
+    padding-bottom: 10px;
     font-weight: 900;
     font-style: italic;
     color: #000000;
@@ -67,7 +67,7 @@
       flex-direction: column;
 
       li {
-        padding-bottom: 6px;
+        padding-bottom: 3px;
 
         &:last-of-type {
           padding-bottom: 0;
