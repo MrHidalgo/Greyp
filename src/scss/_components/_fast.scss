@@ -90,6 +90,37 @@
         }
       }
     }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: -40px;
+      right: 0;
+      width: 100%;
+      max-width: 160px;
+      height: 30px;
+      background-color: #ffe400;
+      font-weight: 900;
+      font-size: 14px;
+      color: #000000;
+      letter-spacing: 0.45px;
+      text-align: center;
+      @include transition(background-color);
+
+      &:hover {
+        color: #000000;
+        background-color: #fff180;
+        @include transition(background-color);
+      }
+
+      &:active {
+        color: #000000;
+        background-color: #ccb600;
+        @include transition(background-color);
+      }
+    }
   }
 }
 

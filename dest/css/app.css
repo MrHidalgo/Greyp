@@ -612,6 +612,55 @@ picture {
   letter-spacing: 0;
 }
 
+/* line 94, src/scss/_components/_fast.scss */
+.fast__block-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  width: 100%;
+  max-width: 160px;
+  height: 30px;
+  background-color: #ffe400;
+  font-weight: 900;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.45px;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 112, src/scss/_components/_fast.scss */
+.fast__block-btn:hover {
+  color: #000000;
+  background-color: #fff180;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 118, src/scss/_components/_fast.scss */
+.fast__block-btn:active {
+  color: #000000;
+  background-color: #ccb600;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
 /* line 3, src/scss/_components/_footer.scss */
 .footer {
   z-index: 1;
@@ -687,6 +736,11 @@ picture {
 }
 
 /* line 51, src/scss/_components/_footer.scss */
+.footer__logo {
+  display: block;
+}
+
+/* line 55, src/scss/_components/_footer.scss */
 .footer__title {
   padding-bottom: 13px;
   font-weight: 900;
@@ -696,7 +750,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 61, src/scss/_components/_footer.scss */
+/* line 65, src/scss/_components/_footer.scss */
 .footer__nav ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -709,17 +763,17 @@ picture {
           flex-direction: column;
 }
 
-/* line 65, src/scss/_components/_footer.scss */
+/* line 69, src/scss/_components/_footer.scss */
 .footer__nav ul li {
   padding-bottom: 6px;
 }
 
-/* line 68, src/scss/_components/_footer.scss */
+/* line 72, src/scss/_components/_footer.scss */
 .footer__nav ul li:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 74, src/scss/_components/_footer.scss */
+/* line 78, src/scss/_components/_footer.scss */
 .footer__nav-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -734,7 +788,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 82, src/scss/_components/_footer.scss */
+/* line 86, src/scss/_components/_footer.scss */
 .footer__nav-link:hover {
   color: rgba(0, 0, 0, 0.85);
   -webkit-transition: color 0.3s ease-in-out;
