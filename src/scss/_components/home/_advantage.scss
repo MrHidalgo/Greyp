@@ -7,19 +7,20 @@
   }
 
   &__block {
+    cursor: pointer;
     position: relative;
     width: 100%;
     max-width: calc(100% / 3);
     min-height: 100%;
-    @include transition(max-width);
+    @include transition(max-width 0.65s);
 
     &.is-hover {
       max-width: calc(50%);
-      @include transition(max-width);
+      @include transition(max-width 0.5s);
     }
     &.is-nhover {
       max-width: calc(50% / 2);
-      @include transition(max-width);
+      @include transition(max-width 0.5s);
     }
 
     &:hover {
@@ -29,7 +30,7 @@
       }
       .advantage__block-desc {
         opacity: 1;
-        transition-delay: 0.3s;
+        transition-delay: 1s;
         @include transition(opacity);
       }
     }

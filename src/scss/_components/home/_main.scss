@@ -8,11 +8,22 @@
     height: 627px;
 
     &-btn {
-      z-index: 10;
+      z-index: 20;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       width: 21px;
+
+      &:hover {
+        svg {
+          transform: scale(0.9);
+          @include transition(transform);
+        }
+      }
+
+      svg {
+        @include transition(transform);
+      }
 
       &--prev {
         left: 79px;
@@ -68,12 +79,21 @@
     width: 95px;
     height: 113px;
 
+    &:hover {
+      svg {
+        transform: scale(0.9);
+        @include transition(transform);
+      }
+    }
+
     svg {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      transform-origin: center;
+      @include transition(transform);
     }
 
     span {

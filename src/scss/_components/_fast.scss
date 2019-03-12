@@ -46,8 +46,18 @@
     position: relative;
     height: 130px;
 
+    &:hover {
+      .fast__block-img {
+        img {
+          transform: scale(1.1);
+          @include transition(transform);
+        }
+      }
+    }
+
     &-img {
       z-index: -1;
+      overflow: hidden;
       position: absolute;
       top: -40px;
       left: 0;
@@ -62,6 +72,8 @@
         height: 100%;
         object-fit: cover;
         object-position: bottom center;
+        transform-origin: center;
+        @include transition(transform);
       }
     }
 

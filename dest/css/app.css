@@ -826,9 +826,22 @@ picture {
   height: 130px;
 }
 
-/* line 49, src/scss/_components/_fast.scss */
+/* line 51, src/scss/_components/_fast.scss */
+.fast__block:hover .fast__block-img img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 58, src/scss/_components/_fast.scss */
 .fast__block-img {
   z-index: -1;
+  overflow: hidden;
   position: absolute;
   top: -40px;
   left: 0;
@@ -837,7 +850,7 @@ picture {
   height: calc(100% + 80px);
 }
 
-/* line 57, src/scss/_components/_fast.scss */
+/* line 67, src/scss/_components/_fast.scss */
 .fast__block-img img {
   position: absolute;
   top: 0;
@@ -848,22 +861,30 @@ picture {
      object-fit: cover;
   -o-object-position: bottom center;
      object-position: bottom center;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 68, src/scss/_components/_fast.scss */
+/* line 80, src/scss/_components/_fast.scss */
 .fast__block-text {
   padding-top: 10px;
   padding-left: 43px;
   color: #fff;
 }
 
-/* line 73, src/scss/_components/_fast.scss */
+/* line 85, src/scss/_components/_fast.scss */
 .fast__block-text span {
   position: relative;
   text-transform: uppercase;
 }
 
-/* line 77, src/scss/_components/_fast.scss */
+/* line 89, src/scss/_components/_fast.scss */
 .fast__block-text span:first-of-type {
   font-weight: 300;
   font-style: italic;
@@ -871,7 +892,7 @@ picture {
   letter-spacing: 0;
 }
 
-/* line 84, src/scss/_components/_fast.scss */
+/* line 96, src/scss/_components/_fast.scss */
 .fast__block-text span:last-of-type {
   top: 14px;
   font-weight: 900;
@@ -880,7 +901,7 @@ picture {
   letter-spacing: 0;
 }
 
-/* line 94, src/scss/_components/_fast.scss */
+/* line 106, src/scss/_components/_fast.scss */
 .fast__block-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -911,7 +932,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 112, src/scss/_components/_fast.scss */
+/* line 124, src/scss/_components/_fast.scss */
 .fast__block-btn:hover {
   color: #000000;
   background-color: #fff180;
@@ -920,7 +941,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 118, src/scss/_components/_fast.scss */
+/* line 130, src/scss/_components/_fast.scss */
 .fast__block-btn:active {
   color: #000000;
   background-color: #ccb600;
@@ -1077,7 +1098,7 @@ picture {
 
 /* line 10, src/scss/_components/home/_main.scss */
 .main__slider-btn {
-  z-index: 10;
+  z-index: 20;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1086,17 +1107,38 @@ picture {
   width: 21px;
 }
 
-/* line 17, src/scss/_components/home/_main.scss */
+/* line 18, src/scss/_components/home/_main.scss */
+.main__slider-btn:hover svg {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 24, src/scss/_components/home/_main.scss */
+.main__slider-btn svg {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 28, src/scss/_components/home/_main.scss */
 .main__slider-btn--prev {
   left: 79px;
 }
 
-/* line 21, src/scss/_components/home/_main.scss */
+/* line 32, src/scss/_components/home/_main.scss */
 .main__slider-btn--next {
   right: 79px;
 }
 
-/* line 26, src/scss/_components/home/_main.scss */
+/* line 37, src/scss/_components/home/_main.scss */
 .main__slider-content {
   z-index: 15;
   position: relative;
@@ -1111,7 +1153,7 @@ picture {
   height: 100%;
 }
 
-/* line 35, src/scss/_components/home/_main.scss */
+/* line 46, src/scss/_components/home/_main.scss */
 .main__desc {
   font-weight: 300;
   font-size: 14px;
@@ -1121,7 +1163,7 @@ picture {
   text-align: center;
 }
 
-/* line 44, src/scss/_components/home/_main.scss */
+/* line 55, src/scss/_components/home/_main.scss */
 .main__title {
   padding-bottom: 5px;
   font-weight: 900;
@@ -1131,7 +1173,7 @@ picture {
   letter-spacing: 0;
 }
 
-/* line 53, src/scss/_components/home/_main.scss */
+/* line 64, src/scss/_components/home/_main.scss */
 .main__subtitle {
   font-weight: 300;
   font-style: italic;
@@ -1140,7 +1182,7 @@ picture {
   letter-spacing: 0;
 }
 
-/* line 61, src/scss/_components/home/_main.scss */
+/* line 72, src/scss/_components/home/_main.scss */
 .main__go {
   position: absolute;
   display: -webkit-box;
@@ -1160,16 +1202,36 @@ picture {
   height: 113px;
 }
 
-/* line 71, src/scss/_components/home/_main.scss */
+/* line 83, src/scss/_components/home/_main.scss */
+.main__go:hover svg {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 89, src/scss/_components/home/_main.scss */
 .main__go svg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 79, src/scss/_components/home/_main.scss */
+/* line 99, src/scss/_components/home/_main.scss */
 .main__go span {
   position: relative;
   left: 22px;
@@ -1267,35 +1329,36 @@ picture {
 
 /* line 9, src/scss/_components/home/_advantage.scss */
 .advantage__block {
+  cursor: pointer;
   position: relative;
   width: 100%;
   max-width: -webkit-calc(100% / 3);
   max-width: calc(100% / 3);
   min-height: 100%;
-  -webkit-transition: max-width 0.3s ease-in-out;
-  -o-transition: max-width 0.3s ease-in-out;
-  transition: max-width 0.3s ease-in-out;
+  -webkit-transition: max-width 0.65s ease-in-out;
+  -o-transition: max-width 0.65s ease-in-out;
+  transition: max-width 0.65s ease-in-out;
 }
 
-/* line 16, src/scss/_components/home/_advantage.scss */
+/* line 17, src/scss/_components/home/_advantage.scss */
 .advantage__block.is-hover {
   max-width: -webkit-calc(50%);
   max-width: calc(50%);
-  -webkit-transition: max-width 0.3s ease-in-out;
-  -o-transition: max-width 0.3s ease-in-out;
-  transition: max-width 0.3s ease-in-out;
+  -webkit-transition: max-width 0.5s ease-in-out;
+  -o-transition: max-width 0.5s ease-in-out;
+  transition: max-width 0.5s ease-in-out;
 }
 
-/* line 20, src/scss/_components/home/_advantage.scss */
+/* line 21, src/scss/_components/home/_advantage.scss */
 .advantage__block.is-nhover {
   max-width: -webkit-calc(50% / 2);
   max-width: calc(50% / 2);
-  -webkit-transition: max-width 0.3s ease-in-out;
-  -o-transition: max-width 0.3s ease-in-out;
-  transition: max-width 0.3s ease-in-out;
+  -webkit-transition: max-width 0.5s ease-in-out;
+  -o-transition: max-width 0.5s ease-in-out;
+  transition: max-width 0.5s ease-in-out;
 }
 
-/* line 26, src/scss/_components/home/_advantage.scss */
+/* line 27, src/scss/_components/home/_advantage.scss */
 .advantage__block:hover .advantage__block-title {
   -webkit-transform: translateY(-11px);
       -ms-transform: translateY(-11px);
@@ -1307,18 +1370,18 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 30, src/scss/_components/home/_advantage.scss */
+/* line 31, src/scss/_components/home/_advantage.scss */
 .advantage__block:hover .advantage__block-desc {
   opacity: 1;
-  -webkit-transition-delay: 0.3s;
-       -o-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  -webkit-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s;
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 37, src/scss/_components/home/_advantage.scss */
+/* line 38, src/scss/_components/home/_advantage.scss */
 .advantage__block-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1328,7 +1391,7 @@ picture {
   min-height: 502px;
 }
 
-/* line 43, src/scss/_components/home/_advantage.scss */
+/* line 44, src/scss/_components/home/_advantage.scss */
 .advantage__block-title {
   z-index: 10;
   position: absolute;
@@ -1357,7 +1420,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 57, src/scss/_components/home/_advantage.scss */
+/* line 58, src/scss/_components/home/_advantage.scss */
 .advantage__block-title p {
   font-weight: 300;
   font-style: italic;
@@ -1366,7 +1429,7 @@ picture {
   letter-spacing: 0;
 }
 
-/* line 66, src/scss/_components/home/_advantage.scss */
+/* line 67, src/scss/_components/home/_advantage.scss */
 .advantage__block-img {
   overflow: hidden;
   z-index: -1;
@@ -1376,7 +1439,7 @@ picture {
   height: calc(100% - 24px);
 }
 
-/* line 73, src/scss/_components/home/_advantage.scss */
+/* line 74, src/scss/_components/home/_advantage.scss */
 .advantage__block-img img {
   position: absolute;
   top: 0;
@@ -1389,7 +1452,7 @@ picture {
      object-position: left center;
 }
 
-/* line 84, src/scss/_components/home/_advantage.scss */
+/* line 85, src/scss/_components/home/_advantage.scss */
 .advantage__block-desc {
   opacity: 0;
   z-index: 5;
@@ -1409,7 +1472,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 97, src/scss/_components/home/_advantage.scss */
+/* line 98, src/scss/_components/home/_advantage.scss */
 .advantage__block-desc p {
   font-weight: 300;
   font-size: 24px;
@@ -1418,7 +1481,7 @@ picture {
   line-height: 38px;
 }
 
-/* line 104, src/scss/_components/home/_advantage.scss */
+/* line 105, src/scss/_components/home/_advantage.scss */
 .advantage__block-desc p span {
   font-weight: bold;
 }
