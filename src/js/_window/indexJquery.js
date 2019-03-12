@@ -3,7 +3,9 @@
 /**
  * @description Window on load.
  */
-$(window).on("load", (ev) => {});
+$(window).on("load", (ev) => {
+  stickyHeader();
+});
 
 
 /**

@@ -61,13 +61,11 @@ $(document).ready((ev) => {
 	  const bikeHoverBlock = () => {
       $('.bike__block').hover(
         (ev) => {
-          // $('.bike__block').addClass('is-nhover');
           $('.bike__block').removeClass('is-active');
           $(ev.currentTarget).addClass('is-active');
         },
         (ev) => {
-          // $('.bike__block').removeClass('is-nhover');
-          $(ev.currentTarget).removeClass('is-active');
+          // $(ev.currentTarget).removeClass('is-active');
         }
       );
     };
