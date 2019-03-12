@@ -1,0 +1,33 @@
+// SECTION digital :: START
+
+.digital {
+  padding-bottom: 55px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 84px;
+    color: #000000;
+    letter-spacing: 0;
+  }
+
+  &__desc {
+    padding-left: 10px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+}
+
+// SECTION digital :: END
