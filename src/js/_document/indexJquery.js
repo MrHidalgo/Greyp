@@ -17,7 +17,18 @@ $(document).ready((ev) => {
 	* =============================================
 	* CALLBACK :: start
 	* ============================================= */
-
+	const initAdvantageAnimation = () => {
+	  $('.advantage__block').hover(
+      (ev) => {
+        $('.advantage__block').addClass('is-nhover');
+        $(ev.currentTarget).removeClass('is-nhover').addClass('is-hover');
+      },
+      (ev) => {
+        $('.advantage__block').removeClass('is-nhover');
+        $(ev.currentTarget).removeClass('is-hover');
+      }
+    );
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -40,6 +51,7 @@ $(document).ready((ev) => {
 
     // callback
 		// ==========================================
+    initAdvantageAnimation();
   };
   initJquery();
 });

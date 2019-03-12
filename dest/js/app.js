@@ -126,7 +126,15 @@ $(document).ready(function (ev) {
   * =============================================
   * CALLBACK :: start
   * ============================================= */
-
+  var initAdvantageAnimation = function initAdvantageAnimation() {
+    $('.advantage__block').hover(function (ev) {
+      $('.advantage__block').addClass('is-nhover');
+      $(ev.currentTarget).removeClass('is-nhover').addClass('is-hover');
+    }, function (ev) {
+      $('.advantage__block').removeClass('is-nhover');
+      $(ev.currentTarget).removeClass('is-hover');
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -147,6 +155,7 @@ $(document).ready(function (ev) {
 
     // callback
     // ==========================================
+    initAdvantageAnimation();
   };
   initJquery();
 });
