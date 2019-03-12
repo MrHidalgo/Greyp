@@ -1282,49 +1282,9 @@ picture {
   line-height: 20px;
 }
 
-/* line 3, src/scss/_components/home/_digital.scss */
-.digital {
-  padding-bottom: 55px;
-}
-
-/* line 6, src/scss/_components/home/_digital.scss */
-.digital__wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* line 10, src/scss/_components/home/_digital.scss */
-.digital__wrapper-left, .digital__wrapper-right {
-  width: 50%;
-}
-
-/* line 16, src/scss/_components/home/_digital.scss */
-.digital__title {
-  font-weight: 900;
-  font-size: 84px;
-  color: #000000;
-  letter-spacing: 0;
-}
-
-/* line 23, src/scss/_components/home/_digital.scss */
-.digital__desc {
-  padding-left: 10px;
-  font-weight: 300;
-  font-size: 14px;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: 20px;
-}
-
 /* line 5, src/scss/_components/home/_advantage.scss */
 .advantage .c-grid {
-  max-width: 1390px;
+  max-width: 90%;
 }
 
 /* line 9, src/scss/_components/home/_advantage.scss */
@@ -1584,6 +1544,527 @@ picture {
 /* line 65, src/scss/_components/home/_channels.scss */
 .channels .social__list-btn .icon-font.icon-youtube {
   font-size: 25px;
+}
+
+/* line 3, src/scss/_components/home/_bike.scss */
+.bike {
+  padding-top: 5px;
+  padding-bottom: 126px;
+}
+
+/* line 7, src/scss/_components/home/_bike.scss */
+.bike__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 12, src/scss/_components/home/_bike.scss */
+.bike__head {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 586px;
+  padding: 44px 105px;
+  background-color: #000000;
+}
+
+/* line 21, src/scss/_components/home/_bike.scss */
+.bike__head-row {
+  z-index: 5;
+  position: relative;
+}
+
+/* line 25, src/scss/_components/home/_bike.scss */
+.bike__head-row--0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 33px;
+}
+
+/* line 31, src/scss/_components/home/_bike.scss */
+.bike__head-row--1 {
+  padding-bottom: 48px;
+}
+
+/* line 35, src/scss/_components/home/_bike.scss */
+.bike__head-row--2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 42, src/scss/_components/home/_bike.scss */
+.bike__head-img {
+  opacity: 0;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 52, src/scss/_components/home/_bike.scss */
+.bike__head-img.is-active {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 57, src/scss/_components/home/_bike.scss */
+.bike__head-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom center;
+     object-position: bottom center;
+}
+
+/* line 69, src/scss/_components/home/_bike.scss */
+.bike__body {
+  min-height: 421px;
+}
+
+/* line 73, src/scss/_components/home/_bike.scss */
+.bike__tabs {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 125px;
+  height: 40px;
+  margin-right: 15px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #9696A0;
+  letter-spacing: 0;
+  text-align: center;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 89, src/scss/_components/home/_bike.scss */
+.bike__tabs:last-of-type {
+  margin-right: 0;
+}
+
+/* line 93, src/scss/_components/home/_bike.scss */
+.bike__tabs:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #9696A0;
+  -webkit-transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* line 105, src/scss/_components/home/_bike.scss */
+.bike__tabs:hover {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 109, src/scss/_components/home/_bike.scss */
+.bike__tabs:hover:before {
+  border-color: #fff;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 115, src/scss/_components/home/_bike.scss */
+.bike__tabs.is-active {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 119, src/scss/_components/home/_bike.scss */
+.bike__tabs.is-active:before {
+  top: 0;
+  height: 40px;
+  border-color: #fff;
+  -webkit-transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* line 128, src/scss/_components/home/_bike.scss */
+.bike__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 160px;
+  height: 50px;
+  background-color: #000000;
+  border: 1px solid #9696A0;
+  color: #9696A0;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 145, src/scss/_components/home/_bike.scss */
+.bike__btn:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 151, src/scss/_components/home/_bike.scss */
+.bike__btn.is-active {
+  color: #FFE400;
+  border-color: #FFE400;
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 158, src/scss/_components/home/_bike.scss */
+.bike__title {
+  padding-bottom: 5px;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 48px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+/* line 167, src/scss/_components/home/_bike.scss */
+.bike__desc {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+/* line 175, src/scss/_components/home/_bike.scss */
+.bike__block {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 382px;
+  padding-top: 30px;
+}
+
+/* line 184, src/scss/_components/home/_bike.scss */
+.bike__block:before, .bike__block:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 1px;
+  background-color: #000000;
+  height: 0;
+  -webkit-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+/* line 195, src/scss/_components/home/_bike.scss */
+.bike__block:before {
+  left: 0;
+}
+
+/* line 199, src/scss/_components/home/_bike.scss */
+.bike__block:after {
+  right: 0;
+}
+
+/* line 204, src/scss/_components/home/_bike.scss */
+.bike__block.is-active:before, .bike__block.is-active:after {
+  height: 100%;
+  -webkit-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+/* line 210, src/scss/_components/home/_bike.scss */
+.bike__block.is-active .bike__block-badge {
+  color: #000000;
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 215, src/scss/_components/home/_bike.scss */
+.bike__block.is-active .bike__block-badge:before {
+  top: 0;
+  height: 40px;
+  border-color: #000;
+  -webkit-transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* line 224, src/scss/_components/home/_bike.scss */
+.bike__block.is-active .bike__block-image img {
+  -webkit-transform: scale(1.7);
+      -ms-transform: scale(1.7);
+          transform: scale(1.7);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 230, src/scss/_components/home/_bike.scss */
+.bike__block.is-active .bike__block-specs,
+.bike__block.is-active .bike__block-price {
+  -webkit-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 237, src/scss/_components/home/_bike.scss */
+.bike__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 249, src/scss/_components/home/_bike.scss */
+.bike__block-badge {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 125px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: 14px;
+  color: #9696A0;
+  letter-spacing: 0;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 267, src/scss/_components/home/_bike.scss */
+.bike__block-badge:before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #9696A0;
+  -webkit-transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out, height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* line 280, src/scss/_components/home/_bike.scss */
+.bike__block-image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 291px;
+}
+
+/* line 285, src/scss/_components/home/_bike.scss */
+.bike__block-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: -webkit-transform 0.45s ease-in-out;
+  transition: -webkit-transform 0.45s ease-in-out;
+  -o-transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+}
+
+/* line 295, src/scss/_components/home/_bike.scss */
+.bike__block-specs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 75px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 307, src/scss/_components/home/_bike.scss */
+.bike__block-specs p {
+  padding-left: 13px;
+  padding-right: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 20px;
+  background-color: #ffe400;
+}
+
+/* line 320, src/scss/_components/home/_bike.scss */
+.bike__block-specs span {
+  font-weight: bold;
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* line 329, src/scss/_components/home/_bike.scss */
+.bike__block-price {
+  position: relative;
+  left: -5px;
+  font-weight: 900;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
