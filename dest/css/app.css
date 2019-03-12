@@ -1220,4 +1220,144 @@ picture {
   line-height: 20px;
 }
 
+/* line 3, src/scss/_components/home/_digital.scss */
+.digital {
+  padding-bottom: 55px;
+}
+
+/* line 6, src/scss/_components/home/_digital.scss */
+.digital__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 10, src/scss/_components/home/_digital.scss */
+.digital__wrapper-left, .digital__wrapper-right {
+  width: 50%;
+}
+
+/* line 16, src/scss/_components/home/_digital.scss */
+.digital__title {
+  font-weight: 900;
+  font-size: 84px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+/* line 23, src/scss/_components/home/_digital.scss */
+.digital__desc {
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+/* line 3, src/scss/_components/home/_channels.scss */
+.channels {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 7, src/scss/_components/home/_channels.scss */
+.channels__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 11, src/scss/_components/home/_channels.scss */
+.channels__wrapper-left, .channels__wrapper-right {
+  width: 50%;
+}
+
+/* line 16, src/scss/_components/home/_channels.scss */
+.channels__wrapper-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 22px;
+}
+
+/* line 22, src/scss/_components/home/_channels.scss */
+.channels__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 28, src/scss/_components/home/_channels.scss */
+.channels__desc {
+  font-weight: 300;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: right;
+}
+
+/* line 36, src/scss/_components/home/_channels.scss */
+.channels__desc span {
+  font-weight: bold;
+}
+
+/* line 43, src/scss/_components/home/_channels.scss */
+.channels .social__list-item {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* line 48, src/scss/_components/home/_channels.scss */
+.channels .social__list-btn {
+  width: 44px;
+  height: 44px;
+}
+
+/* line 53, src/scss/_components/home/_channels.scss */
+.channels .social__list-btn .icon-font.icon-instagram {
+  font-size: 24px;
+}
+
+/* line 56, src/scss/_components/home/_channels.scss */
+.channels .social__list-btn .icon-font.icon-facebook {
+  font-size: 27px;
+}
+
+/* line 59, src/scss/_components/home/_channels.scss */
+.channels .social__list-btn .icon-font.icon-twitter {
+  font-size: 19px;
+}
+
+/* line 62, src/scss/_components/home/_channels.scss */
+.channels .social__list-btn .icon-font.icon-linkedin {
+  font-size: 22px;
+}
+
+/* line 65, src/scss/_components/home/_channels.scss */
+.channels .social__list-btn .icon-font.icon-youtube {
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
