@@ -1,7 +1,76 @@
 // FOOTER :: START
 
+mixin footerNav(arr)
+  .footer__nav
+    ul
+      each val, idx in arr
+        li
+          a.footer__nav-link(href="#" class="" title="")!= val
+
 footer#footer.footer
   .c-grid
     .footer__wrapper
+
+      .footer__row
+        .footer__col.footer__col-1
+
+          .subscribe
+            p.subscribe__title!= "NEWSLETTER"
+
+            .subscribe__form
+              input(type="text" name="" placeholder="_enter your email please")
+              button(type="submit")!= "SEND"
+
+            p.subscribe__text!= "I consent that the company Greyp Bikes d.o.o. and its affiliate Rimac Automobili d.o.o. may store and use the specified data for the purpose of answering enquiries"
+
+        .footer__col.footer__col-2
+
+          +iconSVG('logo')
+
+        .footer__col.footer__col-3
+          h6.footer__title!= "GREYP"
+
+          +footerNav(['about', 'contact', 'work with us'])
+
+        .footer__col.footer__col-4
+          h6.footer__title!= "BIKES"
+
+          +footerNav(['about', 'contact', 'work with us'])
+
+        .footer__col.footer__col-5
+          h6.footer__title!= "SERVICE"
+
+          +footerNav(['about', 'contact'])
+
+        .footer__col.footer__col-6
+          h6.footer__title!= "LEGAL"
+
+          +footerNav(['privacy', 'warranty', 'terms of sale', 'IRI project'])
+
+        .footer__col.footer__col-7
+          h6.footer__title!= "follow us on"
+
+          .social
+            ul.social__list
+              li.social__list-item
+                a.social__list-btn(href="#" class="" title="instagram")
+                  i.icon-font.icon-instagram
+
+              li.social__list-item
+                a.social__list-btn(href="#" class="" title="facebook")
+                  i.icon-font.icon-facebook
+
+              li.social__list-item
+                a.social__list-btn(href="#" class="" title="twitter")
+                  i.icon-font.icon-twitter
+
+              li.social__list-item
+                a.social__list-btn(href="#" class="" title="linkedin")
+                  i.icon-font.icon-linkedin
+
+              li.social__list-item
+                a.social__list-btn(href="#" class="" title="youtube")
+                  i.icon-font.icon-youtube
+
 
 // FOOTER :: END

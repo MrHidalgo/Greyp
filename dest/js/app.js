@@ -71,10 +71,19 @@ var initWebFontLoader = function initWebFontLoader() {
   //   }
   // };
 };
+
 /**
  * @description Document DOM ready.
  */
-(function () {
+$(document).ready(function (ev) {
+  /**
+   *
+   * @type {*|jQuery|HTMLElement}
+   * @private
+   */
+  var _document = $(document),
+      _window = $(window);
+
   /*
   * =============================================
   * CALLBACK :: start
@@ -85,11 +94,9 @@ var initWebFontLoader = function initWebFontLoader() {
   * ============================================= */
 
   /**
-   * @name initNative
-   *
    * @description Init all method
    */
-  var initNative = function initNative() {
+  var initJquery = function initJquery() {
     // default
     initWebFontLoader();
     initPreventBehavior();
@@ -102,5 +109,5 @@ var initWebFontLoader = function initWebFontLoader() {
     // callback
     // ==========================================
   };
-  initNative();
-})();
+  initJquery();
+});

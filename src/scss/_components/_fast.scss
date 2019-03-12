@@ -1,0 +1,96 @@
+// SECTION fast :: START
+
+.fast {
+  z-index: 2;
+  position: relative;
+
+  &__desc {
+    padding-bottom: 12px;
+    font-weight: 300;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 540px;
+    min-height: 80px;
+    padding: 5px 26px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffe400;
+
+    h2 {
+      padding-right: 13px;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 24px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+
+    p {
+      font-weight: 300;
+      font-style: italic;
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 0;
+    }
+  }
+
+  &__block {
+    position: relative;
+    height: 130px;
+
+    &-img {
+      z-index: -1;
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 80px);
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom center;
+      }
+    }
+
+    &-text {
+      padding-top: 10px;
+      padding-left: 43px;
+      color: #fff;
+
+      span {
+        position: relative;
+        text-transform: uppercase;
+
+        &:first-of-type {
+          font-weight: 300;
+          font-style: italic;
+          font-size: 36px;
+          letter-spacing: 0;
+        }
+
+        &:last-of-type {
+          top: 14px;
+          font-weight: 900;
+          font-style: italic;
+          font-size: 48px;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
+
+// SECTION fast :: END

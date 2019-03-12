@@ -1,3 +1,126 @@
 // COMMON :: START
 
+// .subscribe
+.subscribe {
+  padding-top: 65px;
+
+  &__title {
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+
+    input,
+    button {
+      outline: none;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      height: 35px;
+    }
+
+    input {
+      flex: 1;
+      max-width: 100%;
+      padding: 0 15px;
+      font-weight: 300;
+      font-size: 12px;
+      color: #000;
+      letter-spacing: 0;
+      background: #D6D6D6;
+
+      @include inputPlaceholder {
+        color: #9696A0;
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 95px;
+      background: #000000;
+      font-weight: 900;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 12px;
+    color: #9696A0;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+}
+// .subscribe :: end
+
+// .social
+.social {
+  &__list {
+    display: flex;
+
+    &-item {
+      padding-right: 5px;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 17px;
+      height: 17px;
+      border-radius: 100%;
+      border: 1px solid #222221;
+      background-color: #222221;
+      @include transition(background-color);
+
+      &:hover {
+        background-color: transparent;
+        @include transition(background-color);
+
+        .icon-font {
+          color: #222221;
+          @include transition(color);
+        }
+      }
+
+      .icon-font {
+        color: #ffffff;
+        @include transition(color);
+
+        &.icon-instagram {
+          font-size: 11px;
+        }
+        &.icon-facebook {
+          font-size: 10px;
+        }
+        &.icon-twitter {
+          font-size: 7px;
+        }
+        &.icon-linkedin {
+          font-size: 9px;
+        }
+        &.icon-youtube {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+// .social :: end
+
 // COMMON :: END
