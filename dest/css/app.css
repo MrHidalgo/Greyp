@@ -1743,6 +1743,105 @@ picture {
 }
 
 /* line 4, src/scss/_components/home/_description.scss */
+.description__tabs {
+  z-index: 23;
+  opacity: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(100%);
+      -ms-transform: translateY(-50%) translateX(100%);
+          transform: translateY(-50%) translateX(100%);
+  right: 15px;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 15, src/scss/_components/home/_description.scss */
+.description__tabs-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 35px;
+  height: 100px;
+}
+
+/* line 26, src/scss/_components/home/_description.scss */
+.description__tabs-btn.is-active:before {
+  background-color: #ffe400;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 31, src/scss/_components/home/_description.scss */
+.description__tabs-btn.is-active span {
+  color: #ffe400;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 37, src/scss/_components/home/_description.scss */
+.description__tabs-btn:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 10px;
+  height: 100px;
+  border: 1px solid #ffe400;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 49, src/scss/_components/home/_description.scss */
+.description__tabs-btn span {
+  position: relative;
+  top: 6px;
+  left: -6px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px;
+  color: #9696A0;
+  letter-spacing: 0;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 67, src/scss/_components/home/_description.scss */
 .description .home-hardware {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -1751,14 +1850,28 @@ picture {
   width: 100%;
 }
 
-/* line 10, src/scss/_components/home/_description.scss */
+/* line 73, src/scss/_components/home/_description.scss */
 .description .home-hardware.js-sticky .home-hardware__header {
   position: fixed;
   top: 0;
   z-index: 22;
 }
 
-/* line 17, src/scss/_components/home/_description.scss */
+/* line 79, src/scss/_components/home/_description.scss */
+.description .home-hardware.js-sticky .description__tabs {
+  opacity: 1;
+  position: fixed;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 87, src/scss/_components/home/_description.scss */
 .description .home-hardware.js-sticky .home-hardware__video-container video {
   z-index: 20;
   position: fixed;
@@ -1767,20 +1880,20 @@ picture {
           transform: translateZ(0);
 }
 
-/* line 28, src/scss/_components/home/_description.scss */
+/* line 98, src/scss/_components/home/_description.scss */
 .description .home-hardware.js-stick-to-bottom .home-hardware__video-container video {
   position: absolute;
   top: 0;
   bottom: 0;
 }
 
-/* line 36, src/scss/_components/home/_description.scss */
+/* line 106, src/scss/_components/home/_description.scss */
 .description .home-hardware__video-container {
   position: relative;
   background-color: #000000;
 }
 
-/* line 40, src/scss/_components/home/_description.scss */
+/* line 110, src/scss/_components/home/_description.scss */
 .description .home-hardware__video-container video {
   position: absolute;
   top: 0;
@@ -1795,7 +1908,7 @@ picture {
      object-position: center;
 }
 
-/* line 53, src/scss/_components/home/_description.scss */
+/* line 123, src/scss/_components/home/_description.scss */
 .description .home-hardware__header {
   z-index: 22;
   position: absolute;
@@ -1815,7 +1928,7 @@ picture {
   background-color: #ffe400;
 }
 
-/* line 65, src/scss/_components/home/_description.scss */
+/* line 135, src/scss/_components/home/_description.scss */
 .description .home-hardware__header p {
   text-transform: uppercase;
   font-weight: 300;
@@ -1825,7 +1938,7 @@ picture {
   letter-spacing: -0.3px;
 }
 
-/* line 76, src/scss/_components/home/_description.scss */
+/* line 146, src/scss/_components/home/_description.scss */
 .description .home-hardware-item {
   z-index: 21;
   position: absolute;
@@ -1834,32 +1947,32 @@ picture {
   padding-right: 165px;
 }
 
-/* line 83, src/scss/_components/home/_description.scss */
+/* line 153, src/scss/_components/home/_description.scss */
 .description .home-hardware-item--1 {
   top: 12%;
 }
 
-/* line 86, src/scss/_components/home/_description.scss */
+/* line 156, src/scss/_components/home/_description.scss */
 .description .home-hardware-item--2 {
   top: 26%;
 }
 
-/* line 89, src/scss/_components/home/_description.scss */
+/* line 159, src/scss/_components/home/_description.scss */
 .description .home-hardware-item--3 {
   top: 48%;
 }
 
-/* line 92, src/scss/_components/home/_description.scss */
+/* line 162, src/scss/_components/home/_description.scss */
 .description .home-hardware-item--4 {
   top: 70%;
 }
 
-/* line 95, src/scss/_components/home/_description.scss */
+/* line 165, src/scss/_components/home/_description.scss */
 .description .home-hardware-item--5 {
   top: 85%;
 }
 
-/* line 99, src/scss/_components/home/_description.scss */
+/* line 169, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__title {
   position: absolute;
   top: 0;
@@ -1867,14 +1980,14 @@ picture {
   z-index: 10;
 }
 
-/* line 106, src/scss/_components/home/_description.scss */
+/* line 176, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__content {
   margin-left: auto;
   max-width: 29rem;
   text-align: right;
 }
 
-/* line 112, src/scss/_components/home/_description.scss */
+/* line 182, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__icon {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1899,7 +2012,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 127, src/scss/_components/home/_description.scss */
+/* line 197, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__desc {
   width: 100%;
   max-width: 350px;
@@ -1908,17 +2021,17 @@ picture {
   color: #fff;
 }
 
-/* line 134, src/scss/_components/home/_description.scss */
+/* line 204, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__desc *:first-child {
   margin-top: 0;
 }
 
-/* line 138, src/scss/_components/home/_description.scss */
+/* line 208, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__desc *:last-child {
   margin-bottom: 0;
 }
 
-/* line 142, src/scss/_components/home/_description.scss */
+/* line 212, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__desc p {
   font-weight: 300;
   font-size: 16px;
@@ -1928,7 +2041,7 @@ picture {
   line-height: 20px;
 }
 
-/* line 152, src/scss/_components/home/_description.scss */
+/* line 222, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list {
   margin-top: 0;
   margin-bottom: 0;
@@ -1941,7 +2054,7 @@ picture {
   list-style-type: none;
 }
 
-/* line 164, src/scss/_components/home/_description.scss */
+/* line 234, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item {
   position: relative;
   display: -webkit-box;
@@ -1963,12 +2076,12 @@ picture {
   letter-spacing: 0;
 }
 
-/* line 175, src/scss/_components/home/_description.scss */
+/* line 245, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item:last-child {
   margin-bottom: 29px;
 }
 
-/* line 179, src/scss/_components/home/_description.scss */
+/* line 249, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item::after {
   content: '';
   position: absolute;
@@ -1979,7 +2092,7 @@ picture {
   border: 1px solid #fff;
 }
 
-/* line 189, src/scss/_components/home/_description.scss */
+/* line 259, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item strong {
   font-weight: 900;
   color: #ffe400;

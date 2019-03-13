@@ -177,7 +177,7 @@ $(document).ready(function (ev) {
 
       if (!matchMedia('(max-width: 63.99em)').matches) {
         var videoElem = document.getElementById('video');
-        var playbackConst = 400;
+        var playbackConst = 420;
 
         videoContainerElem.style.height = Math.floor(videoElem.duration) * playbackConst + 'px';
 
@@ -219,7 +219,7 @@ $(document).ready(function (ev) {
     var videoTrigger = function videoTrigger() {
       var hardwareSectionElem = document.querySelector('.home-hardware');
       var videoElem = document.getElementById('video');
-      var playbackConst = 400;
+      var playbackConst = 420;
 
       var hardwareSectionOffsetTop = $(hardwareSectionElem).offset().top;
 

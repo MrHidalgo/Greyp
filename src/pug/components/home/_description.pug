@@ -25,16 +25,27 @@ section#description.description
 
   .home-hardware
 
+    .description__tabs
+      a.description__tabs-btn.is-active(href="#" class="" title="")
+        span!= "Stem"
+      a.description__tabs-btn(href="#" class="" title="")
+        span!= "Application"
+      a.description__tabs-btn(href="#" class="" title="")
+        span!= "Stem"
+      a.description__tabs-btn(href="#" class="" title="")
+        span!= "Stem"
+      a.description__tabs-btn(href="#" class="" title="")
+        span!= "Stem"
+
     .home-hardware__header
       p!= '_HARDWARE'
 
     #video-container.home-hardware__video-container
+
       video#video(preload='')
         //source(type='video/webm; codecs="vp8, vorbis"', src='media/video-bike.webm')
         //source(type='video/ogg; codecs="theora, vorbis"', src='media/video-bike.ogv')
         source(type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"', src='media/video-bike.mp4')
-
-
 
       +descriptionBlock('1')
       +descriptionBlock('2')
