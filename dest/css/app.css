@@ -1797,14 +1797,35 @@ picture {
 
 /* line 53, src/scss/_components/home/_description.scss */
 .description .home-hardware__header {
-  position: absolute;
-  top: 0;
-  right: 0;
   z-index: 22;
-  min-width: 54rem;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -25px;
+  left: 165px;
+  width: 350px;
+  height: 50px;
+  padding-left: 25px;
+  background-color: #ffe400;
 }
 
-/* line 62, src/scss/_components/home/_description.scss */
+/* line 65, src/scss/_components/home/_description.scss */
+.description .home-hardware__header p {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: -0.3px;
+}
+
+/* line 76, src/scss/_components/home/_description.scss */
 .description .home-hardware-item {
   position: absolute;
   left: 50%;
@@ -1815,32 +1836,32 @@ picture {
   width: 100%;
 }
 
-/* line 69, src/scss/_components/home/_description.scss */
+/* line 83, src/scss/_components/home/_description.scss */
 .description .home-hardware-item--1 {
   top: 12%;
 }
 
-/* line 72, src/scss/_components/home/_description.scss */
+/* line 86, src/scss/_components/home/_description.scss */
 .description .home-hardware-item--2 {
   top: 26%;
 }
 
-/* line 75, src/scss/_components/home/_description.scss */
+/* line 89, src/scss/_components/home/_description.scss */
 .description .home-hardware-item--3 {
   top: 48%;
 }
 
-/* line 78, src/scss/_components/home/_description.scss */
+/* line 92, src/scss/_components/home/_description.scss */
 .description .home-hardware-item--4 {
   top: 70%;
 }
 
-/* line 81, src/scss/_components/home/_description.scss */
+/* line 95, src/scss/_components/home/_description.scss */
 .description .home-hardware-item--5 {
   top: 85%;
 }
 
-/* line 86, src/scss/_components/home/_description.scss */
+/* line 100, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__thumbnail {
   position: relative;
   display: none;
@@ -1850,7 +1871,7 @@ picture {
           background-size: cover;
 }
 
-/* line 94, src/scss/_components/home/_description.scss */
+/* line 108, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__title {
   position: absolute;
   top: 0;
@@ -1858,14 +1879,14 @@ picture {
   z-index: 10;
 }
 
-/* line 101, src/scss/_components/home/_description.scss */
+/* line 115, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__content {
   margin-left: auto;
   max-width: 29rem;
   text-align: right;
 }
 
-/* line 107, src/scss/_components/home/_description.scss */
+/* line 121, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__icon {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1890,23 +1911,23 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 122, src/scss/_components/home/_description.scss */
+/* line 136, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__desc {
   margin-bottom: 2rem;
   color: #fff;
 }
 
-/* line 126, src/scss/_components/home/_description.scss */
+/* line 140, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__desc *:first-child {
   margin-top: 0;
 }
 
-/* line 130, src/scss/_components/home/_description.scss */
+/* line 144, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__desc *:last-child {
   margin-bottom: 0;
 }
 
-/* line 135, src/scss/_components/home/_description.scss */
+/* line 149, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list {
   margin-top: 0;
   margin-bottom: 0;
@@ -1919,7 +1940,7 @@ picture {
   list-style-type: none;
 }
 
-/* line 147, src/scss/_components/home/_description.scss */
+/* line 161, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item {
   position: relative;
   margin-bottom: 0.4rem;
@@ -1927,12 +1948,12 @@ picture {
   height: 2rem;
 }
 
-/* line 153, src/scss/_components/home/_description.scss */
+/* line 167, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item:last-child {
   margin-bottom: 0;
 }
 
-/* line 157, src/scss/_components/home/_description.scss */
+/* line 171, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item::after {
   content: '';
   position: absolute;
@@ -1943,7 +1964,7 @@ picture {
   border: 1px solid #fff;
 }
 
-/* line 167, src/scss/_components/home/_description.scss */
+/* line 181, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item strong {
   font-weight: 900;
 }

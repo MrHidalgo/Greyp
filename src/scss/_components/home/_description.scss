@@ -51,11 +51,25 @@
     }
 
     &__header {
-      position: absolute;
-      top: 0;
-      right: 0;
       z-index: 22;
-      min-width: 54rem;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      top: -25px;
+      left: 165px;
+      width: 350px;
+      height: 50px;
+      padding-left: 25px;
+      background-color: #ffe400;
+
+      p {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 24px;
+        color: #000000;
+        letter-spacing: -0.3px;
+      }
     }
   }
 

@@ -197,7 +197,8 @@ $(document).ready(function (ev) {
       var hardwareSectionOffsetBottom = hardwareSectionOffsetTop + hardwareSectionHeight;
       var headerHeight = headerElem.offsetHeight;
 
-      var windowScrollTop = window.pageYOffset + headerHeight;
+      // const windowScrollTop = window.pageYOffset + headerHeight;
+      var windowScrollTop = window.pageYOffset;
       var windowScrollBottom = window.pageYOffset + document.documentElement.clientHeight;
 
       if (windowScrollTop >= hardwareSectionOffsetTop) {
