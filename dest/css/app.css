@@ -1827,13 +1827,11 @@ picture {
 
 /* line 76, src/scss/_components/home/_description.scss */
 .description .home-hardware-item {
-  position: absolute;
-  left: 50%;
   z-index: 21;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  position: absolute;
+  right: 0;
   width: 100%;
+  padding-right: 165px;
 }
 
 /* line 83, src/scss/_components/home/_description.scss */
@@ -1861,17 +1859,7 @@ picture {
   top: 85%;
 }
 
-/* line 100, src/scss/_components/home/_description.scss */
-.description .home-hardware-item__thumbnail {
-  position: relative;
-  display: none;
-  height: 20rem;
-  background-position: 50% 50%;
-  -webkit-background-size: cover;
-          background-size: cover;
-}
-
-/* line 108, src/scss/_components/home/_description.scss */
+/* line 99, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__title {
   position: absolute;
   top: 0;
@@ -1879,14 +1867,14 @@ picture {
   z-index: 10;
 }
 
-/* line 115, src/scss/_components/home/_description.scss */
+/* line 106, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__content {
   margin-left: auto;
   max-width: 29rem;
   text-align: right;
 }
 
-/* line 121, src/scss/_components/home/_description.scss */
+/* line 112, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__icon {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1911,23 +1899,36 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 136, src/scss/_components/home/_description.scss */
+/* line 127, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__desc {
+  width: 100%;
+  max-width: 350px;
   margin-bottom: 2rem;
+  margin-left: auto;
   color: #fff;
 }
 
-/* line 140, src/scss/_components/home/_description.scss */
+/* line 134, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__desc *:first-child {
   margin-top: 0;
 }
 
-/* line 144, src/scss/_components/home/_description.scss */
+/* line 138, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__desc *:last-child {
   margin-bottom: 0;
 }
 
-/* line 149, src/scss/_components/home/_description.scss */
+/* line 142, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__desc p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: right;
+  line-height: 20px;
+}
+
+/* line 152, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list {
   margin-top: 0;
   margin-bottom: 0;
@@ -1940,33 +1941,48 @@ picture {
   list-style-type: none;
 }
 
-/* line 161, src/scss/_components/home/_description.scss */
+/* line 164, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item {
   position: relative;
-  margin-bottom: 0.4rem;
-  padding-right: 2.6rem;
-  height: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 20px;
+  margin-bottom: 4px;
+  padding-right: 26px;
+  font-size: 14px;
+  letter-spacing: 0;
 }
 
-/* line 167, src/scss/_components/home/_description.scss */
+/* line 175, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 29px;
 }
 
-/* line 171, src/scss/_components/home/_description.scss */
+/* line 179, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item::after {
   content: '';
   position: absolute;
-  top: -0.3rem;
+  top: 0;
   right: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 20px;
+  height: 20px;
   border: 1px solid #fff;
 }
 
-/* line 181, src/scss/_components/home/_description.scss */
+/* line 189, src/scss/_components/home/_description.scss */
 .description .home-hardware-item__list-item strong {
   font-weight: 900;
+  color: #ffe400;
 }
 
 /* line 3, src/scss/_components/home/_bike.scss */
