@@ -30,6 +30,81 @@ $(document).ready((ev) => {
     );
   };
 
+
+	const initVideoAnimation = () => {
+    const setVideoContainerHeight = function() {
+      const videoContainerElem = document.getElementById('video-container');
+
+      if (!matchMedia('(max-width: 63.99em)').matches) {
+        const videoElem = document.getElementById('video');
+        const playbackConst = 400;
+
+        videoContainerElem.style.height = Math.floor(videoElem.duration) * playbackConst + 'px';
+
+        window.addEventListener('scroll', hardwareSection);
+      } else {
+        videoContainerElem.style.height = '';
+        window.removeEventListener('scroll', hardwareSection);
+      }
+    };
+
+    const hardwareSection = function() {
+      const hardwareSectionElem = document.querySelector('.home-hardware');
+      const headerElem = document.getElementById('header');
+
+      const hardwareSectionOffsetTop = $(hardwareSectionElem).offset().top;
+      const hardwareSectionHeight = hardwareSectionElem.offsetHeight;
+      const hardwareSectionOffsetBottom = hardwareSectionOffsetTop + hardwareSectionHeight;
+      const headerHeight = headerElem.offsetHeight;
+
+      const windowScrollTop = window.pageYOffset + headerHeight;
+      const windowScrollBottom = window.pageYOffset + document.documentElement.clientHeight;
+
+      if (windowScrollTop >= hardwareSectionOffsetTop) {
+        hardwareSectionElem.classList.add('js-sticky');
+        videoTrigger();
+      } else {
+        hardwareSectionElem.classList.remove('js-sticky');
+      }
+
+      if (windowScrollBottom >= hardwareSectionOffsetBottom) {
+        hardwareSectionElem.classList.remove('js-sticky');
+        hardwareSectionElem.classList.add('js-stick-to-bottom');
+      } else {
+        hardwareSectionElem.classList.remove('js-stick-to-bottom');
+      }
+    };
+
+    const videoTrigger = function() {
+      const hardwareSectionElem = document.querySelector('.home-hardware');
+      const videoElem = document.getElementById('video');
+      const playbackConst = 400;
+
+      const hardwareSectionOffsetTop = $(hardwareSectionElem).offset().top;
+
+      function scrollPlay() {
+        videoElem.currentTime = (window.pageYOffset - hardwareSectionOffsetTop) / playbackConst;
+
+        if (!(videoElem.currentTime >= videoElem.duration)) {
+          window.requestAnimationFrame(scrollPlay);
+        }
+      }
+
+      window.requestAnimationFrame(scrollPlay);
+    };
+
+    const initEventListeners = function() {
+      if (document.getElementById('video-container')) {
+        document.getElementById('video').addEventListener('loadedmetadata', setVideoContainerHeight);
+        window.addEventListener('resize', setVideoContainerHeight);
+        window.addEventListener('load', setVideoContainerHeight);
+      }
+    };
+
+    initEventListeners();
+  };
+
+
 	const initTabs = () => {
 	  const bikeBtn = () => {
 	    $('.bike__btn').on('click', (ev) => {
@@ -98,6 +173,7 @@ $(document).ready((ev) => {
 		// ==========================================
     initAdvantageAnimation();
     initTabs();
+    initVideoAnimation();
   };
   initJquery();
 });

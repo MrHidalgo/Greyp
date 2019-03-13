@@ -1396,18 +1396,20 @@ picture {
 
 /* line 10, src/scss/_components/home/_advantage.scss */
 .advantage__block {
+  overflow: hidden;
   cursor: pointer;
   position: relative;
   width: 100%;
   max-width: -webkit-calc(100% / 3);
   max-width: calc(100% / 3);
   min-height: 100%;
+  padding-top: 11px;
   -webkit-transition: max-width 0.65s ease-in-out;
   -o-transition: max-width 0.65s ease-in-out;
   transition: max-width 0.65s ease-in-out;
 }
 
-/* line 18, src/scss/_components/home/_advantage.scss */
+/* line 20, src/scss/_components/home/_advantage.scss */
 .advantage__block.is-hover {
   max-width: -webkit-calc(50%);
   max-width: calc(50%);
@@ -1416,7 +1418,7 @@ picture {
   transition: max-width 0.5s ease-in-out;
 }
 
-/* line 22, src/scss/_components/home/_advantage.scss */
+/* line 24, src/scss/_components/home/_advantage.scss */
 .advantage__block.is-nhover {
   max-width: -webkit-calc(50% / 2);
   max-width: calc(50% / 2);
@@ -1425,7 +1427,7 @@ picture {
   transition: max-width 0.5s ease-in-out;
 }
 
-/* line 28, src/scss/_components/home/_advantage.scss */
+/* line 30, src/scss/_components/home/_advantage.scss */
 .advantage__block:hover .advantage__block-title {
   -webkit-transform: translateY(-11px);
       -ms-transform: translateY(-11px);
@@ -1437,7 +1439,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 32, src/scss/_components/home/_advantage.scss */
+/* line 34, src/scss/_components/home/_advantage.scss */
 .advantage__block:hover .advantage__block-desc {
   opacity: 1;
   -webkit-transition-delay: 1s;
@@ -1449,6 +1451,24 @@ picture {
 }
 
 /* line 39, src/scss/_components/home/_advantage.scss */
+.advantage__block:hover .advantage__block-btn {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: c-fadeIn;
+          animation-name: c-fadeIn;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+/* line 48, src/scss/_components/home/_advantage.scss */
 .advantage__block-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1458,7 +1478,7 @@ picture {
   min-height: 489px;
 }
 
-/* line 45, src/scss/_components/home/_advantage.scss */
+/* line 54, src/scss/_components/home/_advantage.scss */
 .advantage__block-title {
   z-index: 10;
   position: absolute;
@@ -1470,7 +1490,7 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 0;
+  top: 11px;
   left: 24px;
   width: 100%;
   max-width: 160px;
@@ -1484,7 +1504,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 59, src/scss/_components/home/_advantage.scss */
+/* line 68, src/scss/_components/home/_advantage.scss */
 .advantage__block-title p {
   font-weight: 300;
   font-style: italic;
@@ -1493,7 +1513,7 @@ picture {
   letter-spacing: 0;
 }
 
-/* line 68, src/scss/_components/home/_advantage.scss */
+/* line 77, src/scss/_components/home/_advantage.scss */
 .advantage__block-img {
   overflow: hidden;
   z-index: -1;
@@ -1503,7 +1523,7 @@ picture {
   height: calc(100% - 24px);
 }
 
-/* line 75, src/scss/_components/home/_advantage.scss */
+/* line 84, src/scss/_components/home/_advantage.scss */
 .advantage__block-img img {
   position: absolute;
   top: 0;
@@ -1516,16 +1536,16 @@ picture {
      object-position: left center;
 }
 
-/* line 86, src/scss/_components/home/_advantage.scss */
+/* line 95, src/scss/_components/home/_advantage.scss */
 .advantage__block-desc {
   opacity: 0;
   z-index: 5;
   position: absolute;
-  top: 24px;
+  top: 34px;
   left: 0;
   width: 100%;
-  height: -webkit-calc(100% - 24px);
-  height: calc(100% - 24px);
+  height: -webkit-calc(100% - 34px);
+  height: calc(100% - 34px);
   padding: 68px 50px;
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-transition-delay: 0.3s;
@@ -1536,7 +1556,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 99, src/scss/_components/home/_advantage.scss */
+/* line 108, src/scss/_components/home/_advantage.scss */
 .advantage__block-desc p {
   font-weight: 300;
   font-size: 24px;
@@ -1545,9 +1565,81 @@ picture {
   line-height: 38px;
 }
 
-/* line 106, src/scss/_components/home/_advantage.scss */
+/* line 115, src/scss/_components/home/_advantage.scss */
 .advantage__block-desc p span {
   font-weight: bold;
+}
+
+/* line 121, src/scss/_components/home/_advantage.scss */
+.advantage__block-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 160px;
+  height: 30px;
+  background-color: #ffe400;
+  font-weight: 900;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.45px;
+  text-align: center;
+  -webkit-transform: translateX(-500%);
+      -ms-transform: translateX(-500%);
+          transform: translateX(-500%);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 140, src/scss/_components/home/_advantage.scss */
+.advantage__block-btn:hover {
+  color: #000000;
+  background-color: #fff180;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 146, src/scss/_components/home/_advantage.scss */
+.advantage__block-btn:active {
+  color: #000000;
+  background-color: #ccb600;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@-webkit-keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* line 3, src/scss/_components/home/_channels.scss */
@@ -1650,9 +1742,210 @@ picture {
   font-size: 25px;
 }
 
-/* line 3, src/scss/_components/home/_description.scss */
-.description {
-  min-height: 650px;
+/* line 4, src/scss/_components/home/_description.scss */
+.description .home-hardware {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  position: relative;
+  width: 100%;
+}
+
+/* line 10, src/scss/_components/home/_description.scss */
+.description .home-hardware.js-sticky .home-hardware__header {
+  position: fixed;
+  top: 0;
+  z-index: 22;
+}
+
+/* line 17, src/scss/_components/home/_description.scss */
+.description .home-hardware.js-sticky .home-hardware__video-container video {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+/* line 28, src/scss/_components/home/_description.scss */
+.description .home-hardware.js-stick-to-bottom .home-hardware__video-container video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+/* line 36, src/scss/_components/home/_description.scss */
+.description .home-hardware__video-container {
+  position: relative;
+  background-color: #000000;
+}
+
+/* line 40, src/scss/_components/home/_description.scss */
+.description .home-hardware__video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 53, src/scss/_components/home/_description.scss */
+.description .home-hardware__header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 22;
+  min-width: 54rem;
+}
+
+/* line 62, src/scss/_components/home/_description.scss */
+.description .home-hardware-item {
+  position: absolute;
+  left: 50%;
+  z-index: 21;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+
+/* line 69, src/scss/_components/home/_description.scss */
+.description .home-hardware-item--1 {
+  top: 12%;
+}
+
+/* line 72, src/scss/_components/home/_description.scss */
+.description .home-hardware-item--2 {
+  top: 26%;
+}
+
+/* line 75, src/scss/_components/home/_description.scss */
+.description .home-hardware-item--3 {
+  top: 48%;
+}
+
+/* line 78, src/scss/_components/home/_description.scss */
+.description .home-hardware-item--4 {
+  top: 70%;
+}
+
+/* line 81, src/scss/_components/home/_description.scss */
+.description .home-hardware-item--5 {
+  top: 85%;
+}
+
+/* line 86, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__thumbnail {
+  position: relative;
+  display: none;
+  height: 20rem;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 94, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* line 101, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__content {
+  margin-left: auto;
+  max-width: 29rem;
+  text-align: right;
+}
+
+/* line 107, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  width: 6.5rem;
+  height: 6.5rem;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 122, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__desc {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* line 126, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__desc *:first-child {
+  margin-top: 0;
+}
+
+/* line 130, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__desc *:last-child {
+  margin-bottom: 0;
+}
+
+/* line 135, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.14286;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+/* line 147, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__list-item {
+  position: relative;
+  margin-bottom: 0.4rem;
+  padding-right: 2.6rem;
+  height: 2rem;
+}
+
+/* line 153, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__list-item:last-child {
+  margin-bottom: 0;
+}
+
+/* line 157, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__list-item::after {
+  content: '';
+  position: absolute;
+  top: -0.3rem;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fff;
+}
+
+/* line 167, src/scss/_components/home/_description.scss */
+.description .home-hardware-item__list-item strong {
+  font-weight: 900;
 }
 
 /* line 3, src/scss/_components/home/_bike.scss */

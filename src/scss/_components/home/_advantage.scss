@@ -8,11 +8,13 @@
   }
 
   &__block {
+    overflow: hidden;
     cursor: pointer;
     position: relative;
     width: 100%;
     max-width: calc(100% / 3);
     min-height: 100%;
+    padding-top: 11px;
     @include transition(max-width 0.65s);
 
     &.is-hover {
@@ -34,6 +36,13 @@
         transition-delay: 1s;
         @include transition(opacity);
       }
+      .advantage__block-btn {
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-name: c-fadeIn;
+        transform: translateX(0);
+        @include transition(transform 0.5s);
+      }
     }
 
     &-wrapper {
@@ -47,7 +56,7 @@
       position: absolute;
       display: flex;
       align-items: center;
-      top: 0;
+      top: 11px;
       left: 24px;
       width: 100%;
       max-width: 160px;
@@ -87,10 +96,10 @@
       opacity: 0;
       z-index: 5;
       position: absolute;
-      top: 24px;
+      top: 34px;
       left: 0;
       width: 100%;
-      height: calc(100% - 24px);
+      height: calc(100% - 34px);
       padding: 68px 50px;
       background-color: rgba(#000, 0.4);
       transition-delay: 0.3s;
@@ -108,6 +117,47 @@
         }
       }
     }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      max-width: 160px;
+      height: 30px;
+      background-color: #ffe400;
+      font-weight: 900;
+      font-size: 14px;
+      color: #000000;
+      letter-spacing: 0.45px;
+      text-align: center;
+      transform: translateX(-500%);
+      @include transition(background-color, transform);
+
+      &:hover {
+        color: #000000;
+        background-color: #fff180;
+        @include transition(background-color);
+      }
+
+      &:active {
+        color: #000000;
+        background-color: #ccb600;
+        @include transition(background-color);
+      }
+    }
+  }
+}
+
+@keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
